@@ -1,5 +1,5 @@
 # to start, source this file
-# e.g. $ source .bash_profile
+# e.g. $ source bash_profile
 
 # create symbolic links for dotfiles
 lnkdots() {
