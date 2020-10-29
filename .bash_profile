@@ -25,6 +25,9 @@ export M2_HOME=/usr/local/Cellar/maven/3.6.2/libexec
 export M2=${M2_HOME}/bin
 export PATH=${PATH}:${M2_HOME}/bin
 
+# for git branch and python venv on prompt
+# from https://github.com/artemmavrin/git-venv-prompt
+# but just copied locally, not a submodule at the moment
 source ~/git_venv_prompt.sh
 
 # c docker stuff
