@@ -2,7 +2,7 @@
 # e.g. $ source .bash_profile
 
 # create symbolic links for dotfiles
-lndots() {
+lnkdots() {
     ln -sf "$PWD"/.vim /Users/"$USER"/.vim
     ln -sf "$PWD"/.vimrc /Users/"$USER"/.vimrc
     ln -sf "$PWD"/.tmux.conf /Users/"$USER"/.tmux.conf
