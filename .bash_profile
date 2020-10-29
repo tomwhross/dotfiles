@@ -49,7 +49,7 @@ function mcd () {
 }
 
 # for vim soliarized theme
-sh /Users/tomross/.vim/pack/themes/opt/solarized8/scripts/solarized8.sh
+sh /Users/"$USER"/.vim/pack/themes/opt/solarized8/scripts/solarized8.sh
 
 # aliases
 alias av="source bin/activate"
