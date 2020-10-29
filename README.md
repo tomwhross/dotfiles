@@ -42,7 +42,7 @@ $ vim
 ### One-liner
 
 ```
-$ git clone git@github.com:tomwhross/dotfiles.git && cd dotfiles && git submodule init && git submodule update && source .bash_profile && lndots && vim
+$ git clone git@github.com:tomwhross/dotfiles.git && cd dotfiles && git submodule init && git submodule update && source bash_profile && lnkdots && vim
 ```
 
 Once in vim
