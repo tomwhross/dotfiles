@@ -1,6 +1,6 @@
-[submodule "/Users/tomross/projects/dotfiles/.vim/pack/themes/opt/solarized8"]
-	path = /Users/tomross/projects/dotfiles/.vim/pack/themes/opt/solarized8
+[submodule ".vim/pack/themes/opt/solarized8"]
+	path = .vim/pack/themes/opt/solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
-[submodule "/Users/tomross/projects/dotfiles/.vim/bundle/ctrlp.vim"]
-	path = /Users/tomross/projects/dotfiles/.vim/bundle/ctrlp.vim
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
