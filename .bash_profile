@@ -1,3 +1,12 @@
+# to start, source this file
+# e.g. $ source .bash_profile
+
+# create symbolic links for dotfiles
+ln -sf /Users/tomross/projects/dotfiles/.vimrc /Users/tomross/.vimrc
+ln -sf /Users/tomross/projects/dotfiles/.tmux.conf /Users/tomross/.tmux.conf
+ln -sf /Users/tomross/projects/dotfiles/git_venv_prompt.sh /Users/tomross/git_venv_prompt.sh
+ln -sf /Users/tomross/projects/dotfiles/.bash_profile /Users/tomross/.bash_profile
+
 # bash autocomplete config
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
@@ -37,7 +46,7 @@ function mcd () {
 }
 
 # for vim soliarized theme
-sh .vim/pack/themes/opt/solarized8/scripts/solarized8.sh
+sh /Users/tomross/.vim/pack/themes/opt/solarized8/scripts/solarized8.sh
 
 # aliases
 alias av="source bin/activate"
