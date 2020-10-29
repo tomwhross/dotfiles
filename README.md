@@ -25,7 +25,7 @@ Source the `.bash_profile`
 $ source .bash_profile
 ```
 
-Run `lndots` to install the symlinks
+Run `lnkdots` to install the symlinks
 
 ```
 $ lnkdots
