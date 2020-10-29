@@ -19,10 +19,10 @@ $ git submodule init
 $ git submodule update
 ```
 
-Source the `.bash_profile`
+Source the `bash_profile`
 
 ```
-$ source .bash_profile
+$ source bash_profile
 ```
 
 Run `lnkdots` to install the symlinks
