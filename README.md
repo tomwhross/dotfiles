@@ -28,7 +28,7 @@ $ source .bash_profile
 Run `lndots` to install the symlinks
 
 ```
-$ lndots
+$ lnkdots
 ```
 
 Start vim and install the plugins
