@@ -2,10 +2,11 @@
 # e.g. $ source .bash_profile
 
 # create symbolic links for dotfiles
-ln -sf /Users/tomross/projects/dotfiles/.vimrc /Users/tomross/.vimrc
-ln -sf /Users/tomross/projects/dotfiles/.tmux.conf /Users/tomross/.tmux.conf
-ln -sf /Users/tomross/projects/dotfiles/git_venv_prompt.sh /Users/tomross/git_venv_prompt.sh
-ln -sf /Users/tomross/projects/dotfiles/.bash_profile /Users/tomross/.bash_profile
+ln -sf /Users/"$USER"/projects/"${PWD##*/}"/.vim /Users/"$USER"/.vim
+ln -sf /Users/"$USER"/projects/"${PWD##*/}"/.vimrc /Users/"$USER"/.vimrc
+ln -sf /Users/"$USER"/projects/"${PWD##*/}"/.tmux.conf /Users/"$USER"/.tmux.conf
+ln -sf /Users/"$USER"/projects/"${PWD##*/}"/git_venv_prompt.sh /Users/"$USER"/git_venv_prompt.sh
+ln -sf /Users/"$USER"/projects/"${PWD##*/}"/.bash_profile /Users/"$USER"/.bash_profile
 
 # bash autocomplete config
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
