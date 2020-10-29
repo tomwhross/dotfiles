@@ -3,11 +3,11 @@
 
 # create symbolic links for dotfiles
 lnkdots() {
-    ln -sf "$PWD"/.vim /Users/"$USER"/.vim
-    ln -sf "$PWD"/.vimrc /Users/"$USER"/.vimrc
-    ln -sf "$PWD"/.tmux.conf /Users/"$USER"/.tmux.conf
+    ln -sf "$PWD"/vim /Users/"$USER"/.vim
+    ln -sf "$PWD"/vimrc /Users/"$USER"/.vimrc
+    ln -sf "$PWD"/tmux.conf /Users/"$USER"/.tmux.conf
     ln -sf "$PWD"/git_venv_prompt.sh /Users/"$USER"/git_venv_prompt.sh
-    ln -sf "$PWD"/.bash_profile /Users/"$USER"/.bash_profile
+    ln -sf "$PWD"/bash_profile /Users/"$USER"/.bash_profile
 }
 
 # bash autocomplete config
