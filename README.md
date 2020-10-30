@@ -41,5 +41,5 @@ $ vim +PlugInstall +qall
 ### One-liner
 
 ```
-$ git clone git@github.com:tomwhross/dotfiles.git && cd dotfiles && git submodule init && git submodule update && source bash_profile && lnkdots && vim +PlugInstall +qall
+$ git clone git@github.com:tomwhross/dotfiles.git && cd dotfiles && git submodule init && git submodule update && source bash_profile && lnkdots && vim +PlugInstall +qall && source ~/.bash_profile
 ```
