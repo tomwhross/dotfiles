@@ -37,6 +37,12 @@ Install vim plugins
 $ vim +PlugInstall +qall
 ```
 
+Source the bash_profile one last time to ensure the solarized8 script runs
+
+```
+$ source ~/.bash_profile
+```
+
 
 ### One-liner
 
