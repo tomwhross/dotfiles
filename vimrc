@@ -108,6 +108,8 @@ set relativenumber
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
 
+" hi PythonVenvColor guifg=NavyBlue guibg=Grey ctermbg=16 ctermfg=17
+
 " git branch in statusline
 function! GitBranch()
   return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
@@ -118,13 +120,23 @@ function! StatuslineGit()
   return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
 
+function! PythonVenv()
+  return system("basename $VIRTUAL_ENV 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineVenv()
+  let l:venvname = PythonVenv()
+  return strlen(l:venvname) > 0?'  '.l:venvname.' ':''
+endfunction
+
 " build up the statusline
 set statusline=
 set statusline+=%#PmenuSel#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#LineNr#
+set statusline+=%{StatuslineVenv()}
 set statusline+=\ %f
-set statusline+=%m\
+set statusline+=%m
 set statusline+=%=
 set statusline+=%#CursorColumn#
 set statusline+=\ %y
