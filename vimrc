@@ -126,6 +126,9 @@ endfunction
 
 function! StatuslineVenv()
   let l:venvname = PythonVenv()
+  if strlen(l:venvname) > 0
+    let l:venvname = "(" . l:venvname . ")"
+  endif
   return strlen(l:venvname) > 0?'  '.l:venvname.' ':''
 endfunction
 
@@ -133,8 +136,9 @@ endfunction
 set statusline=
 set statusline+=%#PmenuSel#
 set statusline+=%{StatuslineGit()}
-set statusline+=%#LineNr#
+set statusline+=%#CursorColumns#
 set statusline+=%{StatuslineVenv()}
+set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%m
 set statusline+=%=
