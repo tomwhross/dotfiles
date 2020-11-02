@@ -56,6 +56,9 @@ sh /Users/"$USER"/.vim/pack/themes/opt/solarized8/scripts/solarized8.sh
 
 # aliases
 alias av="source bin/activate"
+alias va="source bin/activate"
+alias ll="ls -lah"
+alias up="cd .."
 alias cl=clear
 alias v="vim ."
 
