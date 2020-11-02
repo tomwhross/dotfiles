@@ -31,22 +31,21 @@ Run `lnkdots` to install the symlinks
 $ lnkdots
 ```
 
-Start vim and install the plugins
+Install vim plugins
 
 ```
-$ vim
-:PlugInstall
+$ vim +PlugInstall +qall
+```
+
+Source the bash_profile one last time to ensure the solarized8 script runs
+
+```
+$ source ~/.bash_profile
 ```
 
 
 ### One-liner
 
 ```
-$ git clone git@github.com:tomwhross/dotfiles.git && cd dotfiles && git submodule init && git submodule update && source bash_profile && lnkdots && vim
-```
-
-Once in vim
-
-```
-:PlugInstall
+$ git clone git@github.com:tomwhross/dotfiles.git && cd dotfiles && git submodule init && git submodule update && source bash_profile && lnkdots && vim +PlugInstall +qall && source ~/.bash_profile
 ```
