@@ -1,3 +1,4 @@
+set t_u7=
 " Comments in Vimscript start with a `"`.
 " Some inspirations
 " https://github.com/jvns/vimconfig/blob/master/vimrc
@@ -132,12 +133,19 @@ function! StatuslineVenv()
   return strlen(l:venvname) > 0?'  '.l:venvname.' ':''
 endfunction
 
+" 2020-11-02 TR Calling the functions in the statusline caused some really
+" odd issues with characters appearing on the screen e.g. j and k motion chars
+let g:pyvenvname = StatuslineVenv()
+let g:gitbranchname = StatuslineGit()
+
 " build up the statusline
 set statusline=
 set statusline+=%#PmenuSel#
-set statusline+=%{StatuslineGit()}
+" set statusline+=%{StatuslineGit()}
+set statusline+=%{gitbranchname}
 set statusline+=%#CursorColumns#
-set statusline+=%{StatuslineVenv()}
+" set statusline+=%{StatuslineVenv()}
+set statusline+=%{g:pyvenvname}
 set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%m
