@@ -9,6 +9,7 @@ lnkdots() {
     ln -sf "$PWD"/git_venv_prompt.sh /Users/"$USER"/git_venv_prompt.sh
     ln -sf "$PWD"/bash_profile /Users/"$USER"/.bash_profile
     ln -sf "$PWD"/sqliterc /Users/"$USER"/.sqliterc
+    ln -sf "$PWD"/pdbrc.py /Users/"$USER"/.pdbrc.py
 }
 
 # bash autocomplete config
